@@ -3,9 +3,10 @@ public class BucleConBreak {
 		int posibleNumeroPrimo = 123131231;
 		boolean resultado = false;
 		for ( int divisor = 2 ; divisor < posibleNumeroPrimo/2 ; divisor ++ ){
+			
 			resultado = posibleNumeroPrimo % divisor == 0;
 			 
-			if ( resultado == true ){
+			if ( resultado ){
 				System.out.println( "Primer divisor: " + divisor );
 				break;
 			}
